@@ -1,0 +1,17 @@
+:root{
+    --letra-logo: #e85222;
+    --main-color: #064923;
+    --dark-color: #09775c;
+    --contrast-color: #FFD686;
+    --dark-color111111111: #09A6A3;
+    --main-color111111111: #00CCBE;
+}
+.bg-color-dark{
+    background-color: var(--main-color);
+}
+.p-bold{
+    font-weight: bold;
+}
+.color-dark{
+    color: var(--dark-color);
+}
