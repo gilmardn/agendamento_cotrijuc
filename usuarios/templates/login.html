@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{# ============================= Cabeça ================================= #}
 {% block 'head' %}
-    <link rel="stylesheet" href="{% static 'usuarios/css/usuarios.css' %}">
+    <link rel="stylesheet" href="{% static 'css/usuarios.css' %}">
 {% endblock 'head' %}
+{# ============================= Corpo ================================== #}
 {% block 'body' %}
     <div class="container-fluid">
         <div class="row">
@@ -11,13 +13,13 @@
                     <br>
                     <br>
                     <section class="cont-logo">
-                        <img class="logo" src="{% static 'geral/img/logo.png' %}">
-                        <label class="text-logo">AGENDAMENTOS TERGRASA TERMASA</label>
+                        <img class="logo" src="{% static 'img/logo.png' %}">
+                        <label class="text-logo">XXXX  COTRIJUC  XXXXX</label>
                     </section>
                     <hr>
                     
                     <form action="{% url 'login' %}" method="POST">{% csrf_token %}
-                        <h2 class="fonte-destaque1">Entrar</h2>
+                        <h2 class="fonte-destaque1">Logar</h2>
                         {% if messages %}
                             <br>
                             {% for message in messages %}
@@ -27,7 +29,7 @@
                             {% endfor %}
                         {% endif %}
                         <br>
-                        <label for="">Usuario</label>
+                        <label for="">Username</label>
                         <input type="text" name="username" id="" class="form-control" placeholder="Username ...">
                         <br>
                         
@@ -35,15 +37,18 @@
                         <label for="">Senha</label>
                         <input type="password" name="senha" class="form-control" placeholder="Digite sua senha ...">
                         <br>
-                        <input type="submit" value="Entrar" class="btn btn-success btn-dark-color">
+                        <input type="submit" value="Logar" class="btn btn-success btn-dark-color">
                         <a href="{% url 'cadastro' %}" class="btn btn-dark-color-outline">Não possuo uma conta</a>
                     </form>
                 </div>
             </div>
             <div class="col-md bg-main d-flex justify-content-center align-items-center">
-                <img src="{% static 'usuarios/img/ilustracao1.png' %}" alt="">
-                <img src="{% static 'usuarios/img/ilustracao.png' %}" alt="">
+                <img src="{% static 'img/ilustracao.png' %}" alt="">
+                <img src="{% static 'img/ilustracao1.png' %}" alt="">
             </div>
         </div>
     </div>
 {% endblock 'body' %}
+
+
+

@@ -10,6 +10,8 @@ def cadastro(request):
         return render(request, 'cadastro.html')
     elif request.method == "POST":
         username = request.POST.get('username')
+        nome = request.POST.get('first_name')
+        
         email = request.POST.get("email")
         senha = request.POST.get("senha")
         confirmar_senha = request.POST.get('confirmar_senha')
@@ -27,6 +29,7 @@ def cadastro(request):
         try:
             User.objects.create_user(
                 username=username,
+                first_name= nome,
                 email=email,
                 password=senha
             )

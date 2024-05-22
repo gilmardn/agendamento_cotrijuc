@@ -16,7 +16,7 @@ class Filial(models.Model):
     user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
 
     def __str__(self):
-        return self.user.username + " - " + self.nome
+        return self.user.username + " - " + self.rua
         
 class Saldo(models.Model):
     data = models.DateField()

@@ -1,0 +1,32 @@
+
+fazer deploy
+
+https://www.youtube.com/watch?v=ZBstiRvHX7w&t=446s
+
+
+
+
+git remote add origin git@github.com:gilmardn/agendamento_cotrijuc.git
+
+
+git@github.com:gilmardn/agendamento_cotrijuc.git
+
+=====================================================================
+or create a new repository on the command line
+
+echo "# agendamento_cotrijuc" >> README.md
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:gilmardn/agendamento_cotrijuc.git
+git push -u origin main
+
+
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:gilmardn/agendamento_cotrijuc.git
+git branch -M main
+git push -u origin main

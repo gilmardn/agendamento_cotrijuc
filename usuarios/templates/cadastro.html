@@ -3,7 +3,7 @@
 
 {# ============================= Cabeça ================================= #}
 {% block 'head' %}
-    <link rel="stylesheet" href="{% static 'usuarios/css/usuarios.css' %}">"
+    <link rel="stylesheet" href="{% static 'css/usuarios.css' %}">"
 {% endblock 'head' %}
 {# ============================= Corpo ================================== #}
 {% block 'body' %}
@@ -14,7 +14,7 @@
                     <br>
                     <br>
                     <section class="cont-logo">
-                        <img class="logo" src="{% static 'geral/img/logo.png' %}">
+                        <img class="logo" src="{% static 'img/logo.png' %}">
                         <label class="text-logo">AGENDAMENTOS TERGRASA TERMASA</label>
                     </section>
                     <hr>
@@ -32,7 +32,10 @@
 
                         <br>
                         <label for="">Usuario</label>
-                        <input type="text" name="username" id="" class="form-control" placeholder="Username ...">
+                        <input type="text" name="username" id="" class="form-control" placeholder="Usuario ...">
+                        <br>
+                        <label for="">Nome</label>
+                        <input type="text" name="first_name" id="" class="form-control" placeholder="Nome ...">
                         <br>
                         <label for="">E-mail</label>
                         <input type="text" name="email" id="" placeholder="email@email.com" class="form-control">
@@ -53,12 +56,14 @@
                     </form>
                 </div>
             </div>
+            <div class="cont-cadastro">
             <div class="col-md bg-main d-flex justify-content-center align-items-center">
-                <img src="{% static 'usuarios/img/ilustracao1.png' %}" alt="">
-                <img src="{% static 'usuarios/img/ilustracao.png' %}" alt="">
+                <img src="{% static 'img/ilustracao1.png' %}" alt="">
+                <img src="{% static 'img/ilustracao.png' %}" alt="">
                 
                
             </div>
+        </div>
         </div>
     </div>
 {% endblock 'body' %}
